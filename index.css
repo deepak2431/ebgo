@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+
+.nav-top {
+    background-color: #23102A;
+    width: 100%;
+    height: 40px;
+}
+.header-text {
+    color: #23102A;
+    font-weight: bold;
+}
+.header-text-brief {
+  color: #23102A;
+    font-weight: lighter;
+}
+.header-text-light {
+    color: #23102A;
+    font-weight: lighter;
+    word-wrap: break-word;
+  text-justify: inter-word;
+  text-align: justify;
+}
+.yellow-text-bold {
+  color:  #FAC23E;
+  font-weight: bold;
+}
+.yellow-text-light {
+  color: #FAC23E;
+  font-weight: lighter;
+}
+
+/* Navbar CSS */
+
+.nav-wrapper {
+    background-color: #ffffff;
+}
+.nav-wrapper ul {
+    margin-right: 250px;
+}
+.nav-wrapper li {
+    margin-left: 10px;
+}
+.nav-wrapper a{
+    padding-left: 30px;
+}
+.logo {
+    width: 120px;
+}
+.nav-link-items {
+    color: #23102A;
+}
+nav ul a:active {
+  color: #23102A;
+  font-weight: lighter;
+}
+.material-menu {
+    font-size: 50px;
+    color:#23102A;
+}
+
+/* Header CSS */
+.header-img {
+    margin-top: 0;
+    background-image: url('./resources/assets/header_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 778px;
+    width: 100%;
+}
+.header-content {
+    margin: 50px;
+    padding: 20px;
+}
+
+/*Cards CSS */
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: white;
+  }
+  
+  .title-black {
+    color: black;
+  }
+
+  .work-portfolio{
+      margin: 100px;
+  }
+
+  .button {
+    background-color: #FAC23E;
+    border-radius: 20px;
+    height: 50px;
+    width: 55%;
+    margin: 15px;
+  }
+  .button-text {
+    padding: 15px;
+    font-weight: bold;
+  }
+  a {
+    color: black;
+}
+
+  /* About Us CSS */
+  .about-header-img {
+    background-image: url('./resources/assets/about_header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+  }
+
+  .nav-content {
+    background-color: #ffffff;
+    margin-top: 50px;
+  }
+  .tabs.tabs-transparent .tab a {
+    color: #000000;
+    font-weight: bold;
+    text-transform: none !important;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .tabs.tabs-transparent .tab a.active {
+    color: #23102A;
+    font-weight: bold;
+  }
+  .tabs.tabs-transparent .tab a:hover {
+    color: #23102A;
+    background: #FAC23E;
+    border-bottom: 0.2px solid;
+    margin-bottom: -1px;
+    border-radius: 10px;
+  }
+  .tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color:#FAC23E;
+  }
+
+  /* Team Card CSS */
+  .team {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 30px;
+    box-shadow: 5px 4px 8px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team .team-img {
+    position: relative;
+    font-size: 0;
+    color: #353535;
+  
+  }
+  .profile-img {
+    border-radius: 25px;
+    padding: 10px;
+  }
+  
+  .team .team-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .team .team-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .5);
+    transition: all .3s;
+    font-size: 0;
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .team:hover .team-social {
+    opacity: 1;
+  }
+  
+  .team .team-social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 11px 0 10px 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    transition: all .5s;
+    margin-top: 100px;
+  }
+  
+  .team .team-social a.social-tw {
+    background: #00acee;
+  }
+  
+  .team .team-social a.social-fb {
+    background: #3b5998;
+  }
+  
+  .team .team-social a.social-li {
+    background: #0e76a8;
+  }
+  
+  .team .team-social a.social-in {
+    background: #3f729b;
+  }
+  
+  .team .team-social a.social-yt {
+    background: #c4302b;
+  }
+  
+  .team .team-social a:last-child {
+    margin-right: 0;
+  }
+  
+  .team:hover .team-social a {
+    margin-top: 0;
+  }
+  
+  .team .team-social a:hover {
+    color: #222222;
+    background: #ffffff;
+  }
+  
+  .team .team-content {
+    padding: 20px;
+  }
+  
+  .team .team-content h2 {
+    margin: 0 0 5px 0;
+    color: #353535;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  
+  .team .team-content h3 {
+    margin: 0 0 15px 0;
+    color: #353535;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .team .team-content p {
+    margin: 0 0 15px 0;
+    color: #353535;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  /* Project Page CSS  */
+
+  .project-section {
+    margin-top: 50px;
+  }
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+    .button {
+      background-color: #FAC23E;
+      border-radius: 20px;
+      height: 100px;
+      width: 65%;
+      margin: 15px;
+    }
+    .button-text {
+      padding: 5px;
+      font-weight: bold;
+    }
+  }
+  
+  
